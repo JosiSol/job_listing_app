@@ -1,8 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Listing App
 
-## Getting Started
+A modern job listing application built with Next.js, TypeScript, and Tailwind CSS. Browse through various job opportunities with detailed descriptions, requirements, and company information.
 
-First, run the development server:
+## 🌟 Features
+
+- **Browse Job Listings**: View all available job opportunities in a clean, card-based layout
+- **Detailed Job Pages**: Click on any job to see comprehensive details including:
+  - Job description and responsibilities
+  - Ideal candidate requirements
+  - Location and timing information
+  - Required skills and categories
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Modern UI**: Clean interface with hover effects and smooth transitions
+- **Company Logos**: Visual representation of each company
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org) with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS & Daisy UI
+- **Icons**: React Icons
+- **Runtime**: React 19
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine (version 18 or higher recommended).
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <your-repo-url>
+cd job_listing_app
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +55,75 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+job_listing_app/
+├── app/
+│   ├── components/
+│   │   └── JobCard.tsx          # Job card component
+│   ├── jobs/
+│   │   └── [jobId]/
+│   │       └── page.tsx         # Individual job detail page
+│   ├── data.ts                  # Type definitions
+│   ├── getJobs.ts              # Job data fetching utility
+│   ├── layout.tsx              # Root layout
+│   └── page.tsx                # Home page
+├── data/
+│   └── jobs.json               # Job listings data
+├── public/
+│   ├── job1.png                # Company logos
+│   ├── job2.png
+│   └── ...
+└── README.md
+```
 
-## Learn More
+## 🎯 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding New Jobs
 
-## Deploy on Vercel
+1. Edit `data/jobs.json` to add new job postings
+2. Add corresponding company logos to the `public/` directory
+3. The application will automatically display the new jobs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy on Vercel (Recommended)
+
+The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com):
+
+1. Push your code to a Git repository
+2. Import your project to Vercel
+3. Vercel will automatically detect it's a Next.js app and deploy it
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Learn More
+
+To learn more about the technologies used in this project:
+
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/) - Learn TypeScript
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Learn Tailwind CSS
+- [React Documentation](https://react.dev/) - Learn React

@@ -1,0 +1,56 @@
+import { getJobs } from "../getJobs";
+import { Job } from "../data";
+import Link from "next/link";
+import Image from "next/image";
+
+const JobCard = ({ job }: { job: Job }) => (
+  <Link href={`/jobs/${job.id}`}>
+    <div className="card w-full bg-base-100 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 rounded-2xl">
+      <div className="card-body">
+        <div className="flex items-center gap-4">
+          <Image
+            src={`/job${job.id + 1}.png`}
+            alt={`${job.company} logo`}
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+          <div>
+            <h2 className="card-title text-lg font-semibold">{job.title}</h2>
+            <p className="text-sm text-gray-500">
+              {job.company} • {job.about.location}
+            </p>
+          </div>
+        </div>
+        <p className="text-gray-600 mt-2 text-sm line-clamp-3">
+          {job.description}
+        </p>
+        <div className="card-actions justify-start mt-4">
+          {job.about.categories.map((category) => (
+            <div key={category} className="badge badge-outline">
+              {category}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </Link>
+);
+
+export default async function JobCardPage() {
+  const jobs = await getJobs();
+
+  return (
+    <main className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold mb-2">Opportunities</h1>
+        <p className="text-gray-600 mb-6">Showing {jobs.length} results</p>
+        <div className="grid grid-cols-1 gap-6">
+          {jobs.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
