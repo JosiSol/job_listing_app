@@ -45,9 +45,9 @@ export default async function JobCardPage() {
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-2">
           <h1 className="text-3xl font-bold mb-2">Opportunities</h1>
-          <label>
-            Sort by:
-            <select className="border border-gray-300 rounded-md p-2 ml-2">
+          <label className="select select-bordered w-full max-w-xs">
+            <span className="label">Sort</span>
+            <select>
               <option value="relevant">Relevant</option>
               <option value="name">Name</option>
             </select>
