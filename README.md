@@ -82,13 +82,6 @@ job_listing_app/
 └── README.md
 ```
 
-## 🎯 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
 ## 🎨 Customization
 
 ### Adding New Jobs
@@ -97,23 +90,13 @@ job_listing_app/
 2. Add corresponding company logos to the `public/` directory
 3. The application will automatically display the new jobs
 
-## 🚀 Deployment
+## 📸 Preview
+Opportunities Page
+<img width="1439" height="772" alt="Screenshot 2025-07-23 at 11 17 04 at night" src="https://github.com/user-attachments/assets/49b0945b-20ba-4612-86ca-c80f8c9809c7" />
 
-### Deploy on Vercel (Recommended)
+Applicant Page
+<img width="1439" height="776" alt="Screenshot 2025-07-23 at 11 18 19 at night" src="https://github.com/user-attachments/assets/77310f39-dd30-4da9-a630-cd0e008a341b" />
 
-The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com):
-
-1. Push your code to a Git repository
-2. Import your project to Vercel
-3. Vercel will automatically detect it's a Next.js app and deploy it
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Open a Pull Request
 
 ## 📝 License
 
