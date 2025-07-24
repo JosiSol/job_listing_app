@@ -92,7 +92,7 @@ job_listing_app/
 
 ## 📸 Preview
 Opportunities Page
-<img width="1440" height="773" alt="Screenshot 2025-07-24 at 7 42 27 in the morning" src="https://github.com/user-attachments/assets/9312d697-4678-4499-8497-2344342be899" />
+<img width="1440" height="774" alt="Screenshot 2025-07-24 at 4 49 54 in the afternoon" src="https://github.com/user-attachments/assets/52d4e593-3c22-4872-9771-f08d7cb1fea9" />
 
 Applicant Page
 <img width="1439" height="776" alt="Screenshot 2025-07-23 at 11 18 19 at night" src="https://github.com/user-attachments/assets/77310f39-dd30-4da9-a630-cd0e008a341b" />
