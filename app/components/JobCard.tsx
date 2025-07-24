@@ -50,6 +50,7 @@ export default async function JobCardPage() {
             <select>
               <option value="relevant">Relevant</option>
               <option value="name">Name</option>
+              <option value="date_added">Date Added</option>
             </select>
           </label>
         </div>
